@@ -1,17 +1,12 @@
 version = 1
 
-test_patterns = [
-  "**/*_test.go"
-]
+test_patterns = ["**/*_test.go"]
 
-exclude_patterns = [
-  "vendor/**"
-]
+exclude_patterns = ["examples/**"]
 
 [[analyzers]]
 name = "go"
 enabled = true
 
   [analyzers.meta]
-  import_path = "github.com/jpmorganchase/quorum"
-  dependencies_vendored = true
+  import_paths = ["github.com/sourya/quorum"]
